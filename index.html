@@ -17,12 +17,28 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Hello, world!</title>
+    <title>Note Taker</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra&family=Crimson+Text:wght@600&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
   </head>
 
-  <body
-    style="background-image: url('image/istockphoto-1141668764-1024x1024.jpg')"
-  >
+  <body style="background-image: url('image/background.jpg')">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -41,56 +57,50 @@
       crossorigin="anonymous"
     ></script>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+    <!-- Navbar -->
+
+    <div>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="background-color: #00203fff"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="container text-center">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active" style="margin-right: 5vw">
-              <a class="nav-link fs-5" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item" style="margin-right: 5vw">
-              <a class="nav-link fs-5" href="#">Features</a>
-            </li>
-            <li class="nav-item" style="margin-right: 5vw">
-              <a class="nav-link fs-5" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
-            </li>
-
-            <li style="margin-left: 20rem; margin-top: auto">
-              <button type="button" class="btn btn-info btn-sm">Log in</button>
-              <button type="button" class="btn btn-warning btn-sm">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            <a class="nav-item nav-link active" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link active" href="#features">Features</a>
+            <a class="nav-item nav-link active" href="#aboutus">About Us</a>
+            <a class="nav-item nav-link active" href="#feedback">Feedback</a>
+            <a class="nav-item nav-link active" href="#contact">Contact us</a>
+            <div style="margin-left: 50vw; margin-top: auto">
+              <button type="button" class="btn btn-success btn-lg" style="margin-right: 1rem;">
+                Log in
+              </button>
+              <button type="button" class="btn btn-warning btn-lg">
                 Sign up
               </button>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
-    <div class="container" style="height: 10rem">
+    <!-- Carousel         -->
+
+    <div class="container my-5">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -108,23 +118,26 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
+              src="image/note_2.jpg"
               class="d-block w-100"
-              src="image/Checklist.jpg"
-              alt="First slide"
+              alt="..."
+              style="border-radius: 3rem"
             />
           </div>
           <div class="carousel-item">
             <img
+              src="image/Checklist (2).jpg"
               class="d-block w-100"
-              src="image/note2.jpeg"
-              alt="Second slide"
+              alt="..."
+              style="border-radius: 3rem"
             />
           </div>
           <div class="carousel-item">
             <img
+              src="image/note-taking.jpg"
               class="d-block w-100"
-              src="image/note4.jpg"
-              alt="Third slide"
+              alt="..."
+              style="border-radius: 3rem"
             />
           </div>
         </div>
@@ -149,21 +162,303 @@
       </div>
     </div>
 
+    <div
+    id="features"
 
+      class="container-fluid"
+      style="width: 100vw;"
+    >
+      <div class="container text-center" >
+        <h1
+          style="
+            font-family: 'Alkatra', cursive;
+            color: rgb(66, 4, 66);
+            font-size: 3vw;
+          "
+        >
+          Features
+        </h1>
+      </div>
+      <div class="container" style="padding-bottom: 4vw; margin-bottom: 2vw">
+        <ul style="color: black">
+          <li
+            style="
+              font-size: 1.2vw;
+              font-family: 'Alkatra', cursive;
+              font-family: 'Crimson Text', serif;
+              font-family: 'Josefin Sans', sans-serif;
+            "
+          >
+            <h3>It is Completely Secure</h3>
+          </li>
 
+          <li
+            style="
+              font-size: 1.2vw;
+              font-family: 'Alkatra', cursive;
+              font-family: 'Crimson Text', serif;
+              font-family: 'Josefin Sans', sans-serif;
+            "
+          >
+            <h3>You can access it anywhere anytime</h3>
+          </li>
 
+          <li
+            style="
+              font-size: 1.2vw;
+              font-family: 'Alkatra', cursive;
+              font-family: 'Crimson Text', serif;
+              font-family: 'Josefin Sans', sans-serif;
+            "
+          >
+            <h3>Your data will be end to end encrypted</h3>
+          </li>
 
+          <li
+            style="
+              font-size: 1.2vw;
+              font-family: 'Alkatra', cursive;
+              font-family: 'Crimson Text', serif;
+              font-family: 'Josefin Sans', sans-serif;
+            "
+          >
+            <h3>It is open free and open source</h3>
+          </li>
 
-    
-    <div class="mt-1" style="border: 2px solid blueviolet;">
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
-        laboriosam sed autem voluptate iure maiores, enim, nihil cumque
-        voluptatem, saepe necessitatibus a accusantium provident. Sapiente enim
-        recusandae aut non voluptatibus.
-      </p>
+          <li
+            style="
+              font-size: 1.2vw;
+              font-family: 'Alkatra', cursive;
+              font-family: 'Crimson Text', serif;
+              font-family: 'Josefin Sans', sans-serif;
+            "
+          >
+            <h3>Your Data will be saved forever</h3>
+          </li>
+        </ul>
+      </div>
     </div>
 
+   <!-- Card -->
+<div class="container" id="aboutus">
+    <h1 class="display-4 text-xs-center m-y-3 " id="speakers" style="color: rgb(153, 11, 11);">About us</h1>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid " src="image/jisu (1).jpg" />
+          <div class="card-block">
+            <h4 class="card-title" style="color: rgb(81, 69, 7);">Subhadeep Pattanayak</h4>
     
+            <p class="card-text"> Backend Developer </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6 col-lg-4">
+        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="image/nandi.jpg" />
+          <div class="card-block">
+            <h4 class="card-title" style="color: rebeccapurple;"> Subhajit Nandi</h4>
+    
+            <p class="card-text">Frontend Designer and UI Designer</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6 col-lg-4">
+        <div class="card"><img alt="Card image cap" class="card-img-top img-fluid" src="image/kundu.jpg" />
+          <div class="card-block">
+            <h4 class="card-title" style="color: rgb(228, 95, 28);"> Subhajit Kundu</h4>
+    
+            <p class="card-text"> Automation Testing and version control</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    
+
+
+  <div>
+
+
+    
+
+
+    <div class="container p-5" id="feedback">
+
+
+      <div class="container text-center">
+
+        <h1> Feedback</h1>
+      </div>
+
+      <div class="row">
+  
+        <div class="col-md-6 offset-md-3">
+  
+          <div class="card" style="border-radius: 2rem;">
+  
+            <div class="card-body" >
+              <p class="fs-3 text-center">Tell Us how we did it</p>
+  
+  
+  
+  
+              <form action="adddoct" method="post">
+                <div class="form-group">
+                
+                  
+                  
+                  <label for="exampleInputEmail1">Name</label> <input
+                    type="text" class="form-control" name="name" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Enter Name">
+                  <small id="emailHelp" class="form-text text-muted">Enter your Name
+                  
+                  
+                  
+                  </small>
+                
+                
+                
+                  <label for="exampleInputEmail1">Email address</label> <input
+                    type="email" name="email" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll
+                    never share your email with anyone else.</small>
+                    
+                    
+                    
+                    <label for="exampleInputEmail1">Contact no</label> <input
+                    type="number" name="cont" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Enter Your Contact no">
+                  <small id="emailHelp" class="form-text text-muted">We'll
+                    keep it confidential</small>
+                    
+                    
+                    
+                    <label for="exampleInputEmail1">Rating</label> <input
+                    type="number" name="address" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="">
+                  <small id="emailHelp" class="form-text text-muted">
+                  
+                    provide rating according 1-10
+                  
+                  </small>
+                    
+                    
+                    
+                    <label for="exampleInputEmail1">Feedback</label> <input
+                    type="text" name="qual" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Tell us how we can improve">
+                  
+                </div>
+                
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+  
+            </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+</div>
+
+<div style="background-color: black; width: fit-content; padding: 2rem; border-radius: 2rem;" class="container" id="contact" >
+
+
+  <div class="container">
+  <h1 style="color: white; font-family: 'Times New Roman', Times, serif;"> Contact us</h1>
+</div>
+
+<section class="mb-4">
+  <!-- Facebook -->
+  <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/subhadeep.pattanayak.75/" role="button"
+    ><i class="fab fa-facebook-f"></i
+  ></a>
+
+  <!-- Twitter -->
+  <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/spjisu2000" role="button"
+    ><i class="fab fa-twitter"></i
+  ></a>
+
+
+
+  <!-- Instagram -->
+  <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/__subhadeep_/" role="button"
+    ><i class="fab fa-instagram"></i></a>
+
+  <!-- Linkedin -->
+  <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/subhadeep-pattanayak-50946220a/" role="button"
+    ><i class="fab fa-linkedin-in"></i
+  ></a>
+
+  <!-- Github -->
+  <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/jisu2000" role="button"
+    ><i class="fab fa-github"></i
+      ></a>
+</section>
+<!-- Section: Social media -->
+
+
+ 
+</div>
+
+
+
+
+
+
+
+<div>
+
+
+  <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+   
+    <!-- Section: Social media -->
+
+   
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Copyright Disclaimer under Section 107 of the copyright act 1976, allowance is made for fair use for purposes such as criticism, comment, news reporting, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favour of fair use.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+ 
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://google.com/">google.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</div>
+
+
+
+
+
+    
+
+
+
+
+
+
   </body>
 </html>
